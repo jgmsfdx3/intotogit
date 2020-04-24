@@ -1,0 +1,17 @@
+{
+  "orgName": "Excel",
+  "edition": "Enterprise",
+  "features": [
+        "Communities",
+        "MultiCurrency" , 
+        "ContactsToMultipleAccounts",
+        "CascadeDelete",
+        "Communities",
+        "PersonAccounts",
+        "StateAndCountryPicklist",
+        "Entitlements",
+        "LiveAgent"
+    ],
+  "settings": {
+  }
+}

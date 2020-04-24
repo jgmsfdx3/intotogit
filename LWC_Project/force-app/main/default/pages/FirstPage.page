@@ -1,0 +1,23 @@
+<apex:page>
+<apex:slds></apex:slds>
+<apex:includeLightning></apex:includeLightning>
+<div id='container'>
+
+</div>
+<script>
+    $Lightning.use("c:lwcApplication", function() {
+      $Lightning.createComponent(
+        'c:helloMe',
+        {
+            objectApiName:'Case',
+            fieldApiName:'Subject',
+            iconname: 'standard:case'
+        },
+        'container',
+        function(cmp){
+            console.log("Component created");
+        }
+      )
+    });
+</script>
+</apex:page>

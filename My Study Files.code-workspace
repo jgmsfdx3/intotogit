@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "build-apps-with-lwc"
+		},
+		{
+			"path": "LWC"
+		},
+		{
+			"path": "LWC_Project"
+		},
+		{
+			"path": "Recipes"
+		},
+		{
+			"path": "ApexInteraciveDebugger"
+		}
+	],
+	"settings": {
+	}
+}

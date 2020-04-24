@@ -1,0 +1,47 @@
+<template>
+    <!--
+    <lightning-card title="XXXXX" icon-name="custom:case">
+        <div class="slds-m-around_small">
+            <template for:each={cases.data} for:item="item">
+                <p key={item.Id}>
+                    {item.Subject}</br>
+                    {item.Status}</br>
+                    {item.Id}
+                </p>
+            </template>
+            <template if:true={cases.error}>
+                There is an error
+            </template>
+        </div>
+    </lightning-card>
+    -->
+
+    <lightning-card title="List of Cases" icon-name="custom:case">
+        <div>
+           
+            <c-child-manu></c-child-manu>
+            <c-child-angie></c-child-angie>
+            
+        </div>
+        <div>
+            <lightning-input
+            label='Search case by Subject'
+            onchange={handleChange}
+            value={subject}
+            >
+            </lightning-input>
+        </div>
+        <div class="slds-m-around_small">
+            <template for:each={records} for:item="item">
+                <p key={item.Id}>
+                    {item.Subject}</br>
+                    {item.Status}</br>
+                    {item.Id}
+                </p>
+            </template>
+            <template if:true={errors}>
+                There is an error
+            </template>
+        </div>
+    </lightning-card>
+</template>

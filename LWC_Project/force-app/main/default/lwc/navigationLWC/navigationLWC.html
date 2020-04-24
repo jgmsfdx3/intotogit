@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Navigation" icon-name="custom:case">
+        <div class="slds-m-around_small">
+            <lightning-button label="Object Home" onclick={navigateToObjectHome} variant='brand'></lightning-button>
+            <lightning-button label="List View" onclick={navigateToListView} variant='brand'></lightning-button>
+            <lightning-button label="Record View" onclick={navigateToRecordViewPage} variant='brand'></lightning-button>
+            <lightning-button label="New Record" onclick={navigateToNewRecordPage} variant='brand'></lightning-button>
+            <lightning-button label="Edit" onclick={navigateToRecordEditPage} variant='brand'></lightning-button>
+            <lightning-button label="Custom URL" onclick={navigateToWebPage} variant='brand'></lightning-button>
+        </div>
+    </lightning-card>
+</template>

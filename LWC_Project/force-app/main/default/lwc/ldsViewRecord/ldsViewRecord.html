@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="LDS View record" icon-name="custom:case">
+        <div class="slds-m-around_small">
+            <lightning-record-form
+            record-id={recordId}
+            object-api-name= {objectApiName}
+            layout-type='Full'
+            mode='view'
+            columns="2"
+            onsubmit={handleSubmit}
+            >
+
+            </lightning-record-form>
+        </div>
+    </lightning-card>
+</template>

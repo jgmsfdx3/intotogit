@@ -1,0 +1,29 @@
+<template>
+  <lightning-card title="Property Demo" icon-name="custom:custom54">
+    <div class="slds-m-around _small">
+      <lightning-input
+        value={message1}
+        label="Private Property"
+        placeholder="Non reactive property"
+        onchange={handleChange}
+      >
+      </lightning-input>
+    </div>
+    <div class="slds-m-around _small">
+      From getter name : {name}
+    </div>
+    <div class="slds-m-around _small">
+      From message getter : {changedmessage}
+    </div>
+  </lightning-card>
+<hr>
+<lightning-card title="Simple dynamic calculator" icon-name='custom:custom75'>
+<div class="slds-m-around _small">
+    Field1 : <lightning-input
+    id="fld1"
+    >
+
+    </lightning-input>
+</div>
+</lightning-card>
+</template>

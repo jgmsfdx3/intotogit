@@ -1,0 +1,27 @@
+<template>
+    <div style="background-color:purple">
+    <template if:true={beerRecord}>
+    <lightning-card title={beerRecord.Name} icon-name="custom:case">
+        <div class="slds-m-around_small">
+            <p>
+                <img src="https://png.pngtree.com/png-clipart/20190611/original/pngtree-vector-hand-painted-beer-png-image_2914488.jpg" width="100" height="100" />
+                <img src="https://driftwoodbeer.com/app/uploads/2016/01/Naughty-Hildegard_w-Glass_A.png" width="100" height="100" />
+            </p>
+            <p>
+                <strong>Beer ID: {beerRecord.Id__c}</strong></br>
+                <strong>Brewery Name: {beerRecord.brewery_id__c}</strong></br>
+                <strong>Alcohol %: {beerRecord.Alcohol__c}</strong></br>
+                <strong>Price: {beerRecord.Price__c}</strong></br>
+                <strong>Remaining Quantity: {beerRecord.Remaining_Quantity__c}</strong>
+            </p>
+
+        </div>
+        <div class="slds-m-around_small">
+            <p>
+                <lightning-button label='Add to Cart' variant='brand' onclick={handleAddToCart}></lightning-button>
+            </p>
+        </div>
+    </lightning-card>
+</template>
+</div>
+</template>
