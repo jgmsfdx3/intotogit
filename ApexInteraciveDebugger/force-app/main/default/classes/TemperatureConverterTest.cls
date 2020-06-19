@@ -17,25 +17,13 @@ private class TemperatureConverterTest {
         Decimal celsius = TemperatureConverter.FahrenheitToCelsius(-10);
         System.assertEquals(-23.33,celsius);
     }
-    @isTest static void testhello() {
-        /*
-        Schema.DescribeFieldResult  F = Account.Type.getDescribe();
-        List<Schema.PicklistEntry> P = F.getPicklistValues();
-        for (schema.PicklistEntry pickVal : P) {
-            System.debug(pickVal.getLabel());
-        }
-        String  celsius = TemperatureConverter.hello();
-        Integer a = 10;
-        Integer b = 20;
-        Integer z = (a+b);
-        */
-        Map<ID,String> sampleMap;
-        List<Account> acc;
-        Integer z = 5;
-        do {
-            z = z+1;
-        } while (z<=15);
-        System.debug('zzzzzzzzzz='+z);
+    @isTest static void testmySavePoint() {
+        TemperatureConverter.mySavePoint();
+        System.assertEquals('success','success');
+    }
+    //queryMe
+    @isTest static void testqueryMe() {
+        TemperatureConverter.queryMe();
         System.assertEquals('success','success');
     }
 }

@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { LightningElement, track, wire } from 'lwc';
 import searchBeer from '@salesforce/apex/BeerController.searchBeer';
 export default class BeerList extends LightningElement {
@@ -8,14 +7,14 @@ export default class BeerList extends LightningElement {
 
     @wire(searchBeer)
         wiredRecords({error, data}){
+            console.log(' Data ', data);
             this.beerRecords = data;
             this.errors = error;
         }
-
-        handleEvent(event){
-            console.log("beer list parent been called");
+    handleEvent(event){
+        console.log('handleEvent called...');
         const eventVal = event.detail;
-        //console.log(' Search Param ', eventVal);
+        console.log(' Search Param ', eventVal);
         searchBeer({
             searchParam : eventVal
         })

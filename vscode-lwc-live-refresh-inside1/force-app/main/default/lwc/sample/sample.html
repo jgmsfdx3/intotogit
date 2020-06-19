@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="ApexWireMethodToProperty" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <template if:true={contacts.data}>
+                <template for:each={contacts.data} for:item="contact">
+                    <p key={contact.Id}>{contact.Name}</p>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+      <h1 class="mytest">Hi there, how are you doing dude</h1>
+      <div>
+        {desc.name}
+        {desc.age}
+      </div>
+      <div>
+        <div>Name: {name}</div>
+        <div>Description: {description}</div>
+        <div>Category: {category}</div>
+        <div>Material: {material}</div>
+        <div>Price: {price}</div>
+        <div><img src={pictureUrl}/></div>
+      </div>
+    <br><br>
+</template>

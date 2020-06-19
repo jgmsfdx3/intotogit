@@ -1,0 +1,15 @@
+<template>
+    <template for:each={contacts} for:item="contact">
+        <p key={contact.Id}>{contact.Name}</p>
+        <li key={contact.id}>{contact.name},{contact.title}</li>
+    </template>
+    <lightning-input type="checkbox" label="Show details" onchange={handleChange}></lightning-input>
+<template if:true={show}>
+<h1>Displaying content when the show is true</h1>
+</template>
+
+<template if:false={show}>
+    <h1>Displaying this content when the show is false</h1>
+</template>
+
+</template>

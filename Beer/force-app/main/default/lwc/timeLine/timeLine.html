@@ -1,0 +1,42 @@
+<template>
+    <!--Timeline will be handled here-->
+
+    <lightning-card>
+      <div class="timeline">
+        <template if:true={ac}>
+          <div class="container left">
+              <div class="content">
+                <template if:true={record_account}>
+                <c-time-line-accordian-ac
+                rec-id = {recId}
+                rec-name = {recName}
+                rec-data={recData}>
+                </c-time-line-accordian-ac>
+              </template>
+              </div>
+            </div>
+      </template>
+        <template if:true={hr}>
+            <div class="container left">
+                <div class="content">
+                  <c-time-line-accordian-hr></c-time-line-accordian-hr>
+                </div>
+              </div>
+        </template>
+        <template if:true={ex}>
+            <div class="container left">
+                <div class="content">
+                  <c-time-line-accordian-ex></c-time-line-accordian-ex>
+                </div>
+              </div>
+        </template>
+        <template if:true={vp}>
+            <div class="container left">
+                <div class="content">
+                  <c-time-line-accordian-vp></c-time-line-accordian-vp>
+                </div>
+              </div>
+        </template>
+    </div>
+  </lightning-card>
+</template>

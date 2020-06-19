@@ -1,14 +1,9 @@
 <template>
-    <div style="background-color: aqua;">
-    <lightning-card title="Beer Search" icon-name="custom:case" >
-        <div class="slds-m-around_small">
-            <lightning-input
-            label="Beer Search"
-            placeholder='Enter beer name'
-            onchange={handleChange}
-            >
-            </lightning-input>
-        </div>
-    </lightning-card>
-</div>
+    <div class="slds-m-around_small">
+        <lightning-input value={searchValue}
+        label='Beer Search'
+        placeholder='Type the beer to search'
+        onchange={handleChange}
+        ></lightning-input>
+    </div>
 </template>

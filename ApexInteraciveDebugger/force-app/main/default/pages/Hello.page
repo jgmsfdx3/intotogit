@@ -1,0 +1,30 @@
+<apex:page standardController="Contact" >
+    <!--
+        https://mysfdx3-dev-ed.lightning.force.com/lightning/r/Account/0013h000009T8TuAAK/view
+     -->
+    <apex:form >
+        
+        <apex:pageBlock title="Edit Contact">
+            <apex:pageBlockSection columns="1">
+                <apex:inputField value="{!Contact.FirstName}"/>
+                <apex:inputField value="{!Contact.LastName}"/>
+                <apex:inputField value="{!Contact.Email}"/>
+                <apex:inputField value="{!Contact.Birthdate}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!save}" value="Save"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        <p>
+        {! $User.FirstName } {! $User.LastName } 
+    </p>
+    <p>
+           ({! $User.Username })
+    </p>
+        <p>
+            ({! IF($User.isActive, $User.Username, 'inactive') })
+        </p>
+          
+        
+    </apex:form>
+</apex:page>
